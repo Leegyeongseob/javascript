@@ -1,0 +1,33 @@
+*{
+  box-sizing: border-box;
+}
+.container{
+  width: 500px;
+  height: 800px;   
+}
+#buttonlist{
+  width:500px;
+  height: 80px;
+}
+button{
+  width:150px;
+  height: 45px;
+  color:#fff;
+  border: #fff;
+}
+button:nth-child(1){
+  background-color: green;
+}
+button:nth-child(2){
+  background-color: orange;
+}
+button:nth-child(3){
+  background-color: purple;
+}
+#mainbtn{
+  width:500px;
+  height:370px;
+  background-color: orange;
+  border: #fff;
+  border-radius: 4%;
+}

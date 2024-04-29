@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- div태그를 생성하고, 하위에 메뉴 리스트 추가하기 -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <style>
+    #menu{
+      font-size :40px;
+      text-align: center;
+      color : white;
+      background-color: orangered;
+      margin : 10px auto;
+    }
+    ul, li{
+      list-style: none;
+      background-color: blue;
+      color : white;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div id="menu">중국집 메뉴</div>
+  <script>
+    let menulist = document.createElement("ul");
+    let menuItem1 = document.createElement("li");
+    let menuItem2 = document.createElement("li");
+    let menuItem3 = document.createElement("li");
+    let menuItem4 = document.createElement("li");
+    let menuItem5 = document.createElement("li");
+    let menuItem6 = document.createElement("li");
+    let menuItem7 = document.createElement("li");
+    let menuItem8 = document.createElement("li");
+    let menuItem9 = document.createElement("li");
+    let menuItem10 = document.createElement("li");
+    let menuItem11 = document.createElement("li");
+    menuItem1.innerText = "돈까스";
+    menuItem2.innerText = "오므라이스";
+    menuItem3.innerText = "짜장면";
+    menuItem4.innerText = "짬뽕";
+    menuItem5.innerText = "탕수육";
+    menuItem6.innerText = "양장피";
+    menuItem7.innerText = "유산슬";
+    menuItem8.innerText = "난자완스";
+    menuItem9.innerText = "멘보샤";
+    menuItem10.innerText = "쟁반짜장";
+    menuItem11.innerText = "차돌짬뽕";
+    menulist.appendChild(menuItem1);
+    menulist.appendChild(menuItem2);
+    menulist.appendChild(menuItem3);
+    menulist.appendChild(menuItem4);
+    menulist.appendChild(menuItem5);
+    menulist.appendChild(menuItem6);
+    menulist.appendChild(menuItem7);
+    menulist.appendChild(menuItem8);
+    menulist.appendChild(menuItem9);
+    menulist.appendChild(menuItem10);
+    menulist.appendChild(menuItem11);
+    let menuEl = document.querySelector("#menu");
+    menuEl.appendChild(menulist);
+  </script>
+</body>
+</html>

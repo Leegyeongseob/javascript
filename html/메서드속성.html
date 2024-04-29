@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <a href="https://google.com">구글</a>
+  <script>
+    //해당되는 속성의 값을 불러오는 경우
+    const aEl = document.querySelector('a');
+    const href = aEl.getAttribute("href");
+    console.log(href);
+    //해당되는 속성값을 저장하는 경우
+    aEl.setAttribute("href","https://kakako.com");
+    aEl.innerText = "카카오";
+    console.log(aEl);
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/btn.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="container">
+    <div id="buttonlist">
+      <button>Green</button>
+      <button>Orange</button>
+      <button>Purple</button>
+    </div>
+      <!-- 이벤트 등록 방식 -->
+      <div id="mainbtn"></div>
+  </div>
+  <script>
+    const btnList = document.querySelectorAll("button");
+    const mainBtn = document.querySelector("#mainbtn");
+    for(let e of btnList){
+      e.addEventListener("click",()=>{
+        mainBtn.style.backgroundColor = window.getComputedStyle(e).getPropertyValue("background-color");
+      });
+    };
+  </script>
+</body>
+</html>

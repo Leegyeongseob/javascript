@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    #container {
+      width: 500px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    input[type="text"] {
+      width: 370px;
+      float: left;
+      height: 30px;
+      padding-left: 30px;
+    }
+
+    button {
+      width: 90px;
+      height: 30px;
+      float: right;
+      background: #222;
+      color: #fff;
+      border: none;
+    }
+
+    hr {
+      clear: both;
+      display: none;
+    }
+
+    ul {
+      list-style: none;
+      padding-top: 50px;
+    }
+
+    li {
+      line-height: 2.5;
+    }
+
+    li:hover {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <h1>중국집 메뉴판</h1>
+    <p>추가 할 메뉴를 입력해보세요.</p>
+    <p>인기 없는 메뉴는 클릭해서 삭제할 수 있습니다.</p>
+    <form action="">
+      <input type="text" id="subject" autofocus>
+      <!--버튼의 기본 기능인 submit 역할 취소-->
+      <button onclick="newRegister(); return false;">추가</button>
+    </form>
+    <hr>
+    <ul id="itemList"></ul>
+  </div>
+  <script src="../js/dom.js"></script>
+</body>
+
+</html>
